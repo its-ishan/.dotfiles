@@ -1,6 +1,6 @@
 #######Primary
 
-sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety intellij-idea-community-edition
+sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven
 
 #######Secondary
 
