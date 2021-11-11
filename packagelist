@@ -1,0 +1,25 @@
+#######Primary
+
+sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety intellij-idea-community-edition
+
+#######Secondary
+
+sudo pacman -S libtorrent-rasterbar boost-libs
+
+#######With YAY
+
+yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce
+
+
+#######Something extra
+
+sudo nano ~/.config/user-dirs.dirs 
+sudo nano /etc/xdg/user-dirs.defaults 
+reboot
+rm -r Music/
+rm -r Videos/
+
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+
+env WAYLAND_DISPLAY= alacritty
