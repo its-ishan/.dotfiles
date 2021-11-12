@@ -8,7 +8,7 @@ sudo pacman -S libtorrent-rasterbar boost-libs
 
 #######With YAY
 
-yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce
+yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce ntfs-3g-fuse
 
 
 #######Something extra
