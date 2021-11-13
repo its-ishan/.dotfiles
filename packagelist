@@ -1,6 +1,6 @@
 #######Primary
 
-sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven
+sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extensions modemmanager
 
 #######Secondary
 
@@ -8,7 +8,7 @@ sudo pacman -S libtorrent-rasterbar boost-libs
 
 #######With YAY
 
-yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce ntfs-3g-fuse
+yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce ntfs-3g-fuse upd72020x-fw wd719x-firmware aic94xx-firmware
 
 
 #######Something extra
@@ -23,3 +23,6 @@ gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 
 env WAYLAND_DISPLAY= alacritty
+
+sudo usermod -a -G wheel ishan
+sudo smbpasswd -a ishan

@@ -8,5 +8,5 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export D=/mnt/C25E87385E87246F
+export D=/mnt/sda6
 export E=/mnt/sda7

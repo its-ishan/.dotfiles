@@ -1,0 +1,18 @@
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+# SSH
+-A INPUT -p tcp -m tcp --dport 22 -m state --state NEW -j ACCEPT
+# Ping
+-A INPUT -p icmp -j ACCEPT
+# SNMP
+-A INPUT -s 192.168.0.0/24 -p udp -m udp --dport 161 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 443:445 -j ACCEPT 
+-A INPUT -p udp -m udp --dport 137:139 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 137:139 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 8118 -j ACCEPT 
+COMMIT
