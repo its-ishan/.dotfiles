@@ -1,6 +1,6 @@
 #######Primary
 
-sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extensions modemmanager
+sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extensions modemmanager ntfs-3g
 
 #######Secondary
 
@@ -8,7 +8,7 @@ sudo pacman -S libtorrent-rasterbar boost-libs
 
 #######With YAY
 
-yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce ntfs-3g-fuse upd72020x-fw wd719x-firmware aic94xx-firmware
+yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce upd72020x-fw wd719x-firmware aic94xx-firmware logiops
 
 
 #######Something extra
@@ -26,3 +26,6 @@ env WAYLAND_DISPLAY= alacritty
 
 sudo usermod -a -G wheel ishan
 sudo smbpasswd -a ishan
+
+
+java -jar ~/joal/jack-of-all-trades-2.1.26.jar --joal-conf="joal" --spring.main.web-environment=true --server.port=8119 --joal.ui.path.prefix="tg" --joal.ui.secret-token="tg"
