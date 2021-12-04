@@ -1,6 +1,6 @@
 #######Primary
 
-sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extensions modemmanager ntfs-3g
+sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extensions modemmanager acpid dbus cronie chrome-gnome-shell
 
 #######Secondary
 
@@ -8,7 +8,7 @@ sudo pacman -S libtorrent-rasterbar boost-libs
 
 #######With YAY
 
-yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce upd72020x-fw wd719x-firmware aic94xx-firmware logiops
+yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin Spotify microsoft-edge-stable-bin intellij-idea-ce upd72020x-fw wd719x-firmware aic94xx-firmware ani-cli
 
 
 #######Something extra
