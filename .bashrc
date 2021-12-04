@@ -101,3 +101,5 @@ source $OSH/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 
 export EDITOR=nano
+export PATH=$PATH:/home/ishan/.local/bin
+
