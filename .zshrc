@@ -8,7 +8,7 @@ export ZSH="/home/ishan/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="jonathan"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -99,6 +99,30 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export C=/mnt/AC34504034501026
-export D=/mnt/C25E87385E87246F
-export E=/mnt/sda7
+
+### Set alias
+#############
+alias cls="clear"
+alias ..="cd .."
+alias cd..="cd .."
+alias ll="ls -lisa --color=auto"
+alias home="cd ~"
+alias df="df -ahiT --total"
+alias mkdir="mkdir -pv"
+alias mkfile="touch"
+alias rm="rm -rfi"
+alias userlist="cut -d: -f1 /etc/passwd"
+alias ls="ls -CF --color=auto"
+alias lsl="ls -lhFA | less"
+alias free="free -mt"
+alias du="du -ach | sort -h"
+alias ps="ps auxf"
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias wget="wget -c"
+alias histg="history | grep"
+alias myip="curl http://ipecho.net/plain; echo"
+alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
+alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
+alias grep='grep --color=auto'
+
+export EDITOR=nano
