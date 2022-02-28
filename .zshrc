@@ -88,6 +88,11 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -126,3 +131,20 @@ alias folders='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
 alias grep='grep --color=auto'
 
 export EDITOR=nano
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/home/ishan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/ishan/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/ishan/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/ishan/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="$PATH:/opt/mssql-tools/bin"

@@ -8,7 +8,7 @@ sudo pacman -S libtorrent-rasterbar boost-libs
 
 #######With YAY
 
-yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin spotify microsoft-edge-stable-bin intellij-idea-ce upd72020x-fw wd719x-firmware aic94xx-firmware chrome-gnome-shell
+yay -S authy yaru-sound-theme papirus-icon-theme-git materia-theme-git menulibre brave-bin spotify microsoft-edge-stable-bin intellij-idea-ce upd72020x-fw wd719x-firmware aic94xx-firmware chrome-gnome-shell mkinitcpio-firmware qed 
 
 
 #######Something extra
