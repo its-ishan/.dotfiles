@@ -1,0 +1,17 @@
+# /dev/sda5 UUID=795baf30-b6df-475e-a362-67c8228e7b08
+PARTUUID=13441e52-eb06-41f9-9b2e-1e11d6ca0cd3	/         	btrfs     	rw,relatime,space_cache=v2,subvolid=256,subvol=/root	0 0
+
+# /dev/sda1 UUID=0E26-B522
+PARTUUID=3e3d0225-1799-4efa-9575-9c6e0ce13a2a	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda4 UUID=68170294-0ffc-46b0-bd8d-71026cf6784c
+PARTUUID=244874e4-1c90-4d8e-9b86-24fd27950295	none      	swap      	defaults  	0 0
+
+# /dev/sda3
+PARTUUID=057ee2b3-4f28-4c77-a331-3b4645c65000	/run/media/sda3 ntfs-3g uid=ishan,x-gvfs-show,gid=users,dmask=022	0       0
+
+# /dev/sda6
+PARTUUID=79bb053d-2f9c-4eaf-b2b2-8d8cf5caa7a0	/run/media/sda6	ntfs-3g	uid=ishan,x-gvfs-show,gid=users,dmask=022	0	0
+
+# /dev/sda7
+PARTUUID=5d19b5b0-5de0-4341-81f6-5fb889c2e44b	/run/media/sda7	ntfs-3g	uid=ishan,x-gvfs-show,gid=users,dmask=022	0	0
