@@ -1,6 +1,6 @@
 #######Primary
 
-sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extensions modemmanager acpid dbus cronie
+sudo pacman -S broadcom-wl-dkms alacritty htop apache jdk-openjdk java-openjfx variety maven samba smbclient cifs-utils libnautilus-extension modemmanager acpid dbus cronie
 
 #######Secondary
 
