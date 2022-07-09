@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ishan/.oh-my-zsh"
@@ -88,11 +88,10 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-if [ -n "$DESKTOP_SESSION" ];then
-    eval $(gnome-keyring-daemon --start)
-    export SSH_AUTH_SOCK
-fi
-
+#if [ -n "$DESKTOP_SESSION" ];then
+#    eval $(gnome-keyring-daemon --start)
+#    export SSH_AUTH_SOCK
+#fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -147,4 +146,4 @@ export EDITOR=nano
 #unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH="$PATH:/opt/mssql-tools/bin"
+#export PATH="$PATH:/opt/mssql-tools/bin"
